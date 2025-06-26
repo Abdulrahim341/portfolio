@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+}
+
+@layer components{
+.btn{
+    @apply cursor-pointer px-3 py-1 rounded-md bg-[#1ABC9C] text-white hover:bg-[#5da697]
+}    
+.form-control{
+    @apply w-full    border-b  border-b-gray-500/30  rounded-none px-2 py-1 focus:outline-none 
+}
+}
+
+@layer base{
+    span,a{
+        display:inline-block
+    }
+}
